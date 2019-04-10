@@ -72,10 +72,6 @@ This method calls the `stripe.redirectToCheckout` function and passes along all 
 
 `options (Object)`: an object containing the options used in the [`stripe.redirectToCheckout()`](https://stripe.com/docs/stripe-js/reference#stripe-redirect-to-checkout) function
 
-#### Returns
-
-`(null)` - Will either redirect you to the Stripe checkout page
-
 ---
 
 MIT License.
