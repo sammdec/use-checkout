@@ -56,6 +56,10 @@ const App = () => (
 
 The hook that sets up the Stripe instance, you must provide
 
+#### Arguments
+
+`publicKey (String)`: Your Stripe Public Key, which can be found in the API keys page under the Developers menu item in the Dashboard
+
 #### Returns
 
 Object containing:
