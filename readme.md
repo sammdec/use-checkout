@@ -66,7 +66,7 @@ Object containing:
 
 ### `redirectToCheckout(options)`
 
-This method calls the `stripe.redirectToCheckout` function and passes along all the `options` to the function - see [here](https://stripe.com/docs/stripe-js/reference#stripe-redirect-to-checkout) for available options for Stripe Checkout. If there is an error this function will return a string containing the error message.
+This method calls the `stripe.redirectToCheckout` function and passes along all the `options` to the function - see [here](https://stripe.com/docs/stripe-js/reference#stripe-redirect-to-checkout) for available options for Stripe Checkout
 
 #### Arguments
 
@@ -74,7 +74,7 @@ This method calls the `stripe.redirectToCheckout` function and passes along all 
 
 #### Returns
 
-`(string)` - Will either redirect you to the Stripe checkout page or if there is an error it will return the `error` string
+`(null)` - Will either redirect you to the Stripe checkout page
 
 ---
 

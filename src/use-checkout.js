@@ -1,14 +1,13 @@
 import { useEffect } from "react"
 const BETA_VERSION = "checkout_beta_4"
 
-const sendToCheckout = publicKey => async options => {
+const sendToCheckout = publicKey => options => {
   const Stripe = window.Stripe
   const stripe = Stripe(publicKey, {
     betas: [BETA_VERSION]
   })
 
-  const result = await stripe.redirectToCheckout({ ...options })
-  return result.error.message
+  stripe.redirectToCheckout({ ...options })
 }
 
 export default publicKey => {
