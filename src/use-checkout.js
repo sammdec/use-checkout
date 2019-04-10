@@ -1,34 +1,27 @@
 import { useEffect } from "react"
 const BETA_VERSION = "checkout_beta_4"
 
-const sendToCheckout = ({ items, successUrl, cancelUrl }) => publicKey => {
+const sendToCheckout = publicKey => async options => {
   const Stripe = window.Stripe
   const stripe = Stripe(publicKey, {
     betas: [BETA_VERSION]
   })
 
-  stripe
-    .redirectToCheckout({
-      items,
-      successUrl,
-      cancelUrl
-    })
-    .then(function(result) {
-      // Display result.error.message to your customer
-      return (error = result.error)
-    })
+  const result = await stripe.redirectToCheckout({ ...options })
+  return result.error.message
 }
 
 export default publicKey => {
   useEffect(() => {
-    if (typeof Stripe === "undefined") {
+    if (!document.querySelector('[src="https://js.stripe.com/v3/"]')) {
       const script = document.createElement("script")
       script.src = "https://js.stripe.com/v3/"
       script.async = true
       script.rel = "prefetch"
-      document.body.appendChild(script)
+      script.setAttribute("data-testid", "stripe-script")
+      document.head.appendChild(script)
     }
   }, [])
 
-  return [sendToCheckout(publicKey), error]
+  return [sendToCheckout(publicKey)]
 }
