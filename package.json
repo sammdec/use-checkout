@@ -1,6 +1,6 @@
 {
   "name": "use-checkout",
-  "version": "0.0.0",
+  "version": "0.1.0-beta.4",
   "description": "A tiny react hook to easily integrate Stripe's hosted Checkout in a react app",
   "main": "dist/use-checkout.cjs.js",
   "module": "dist/use-checkout.esm.js",
