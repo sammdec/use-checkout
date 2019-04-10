@@ -1,6 +1,4 @@
-import React from "react"
 import { renderHook, act, cleanup } from "react-hooks-testing-library"
-import "jest-dom/extend-expect"
 
 import useCheckout from "../src/use-checkout"
 
