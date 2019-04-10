@@ -1,0 +1,48 @@
+{
+  "name": "use-checkout",
+  "version": "0.0.0",
+  "description": "A tiny react hook to easily integrate Stripe's hosted Checkout in a react app",
+  "main": "dist/use-checkout.cjs.js",
+  "module": "dist/use-checkout.esm.js",
+  "license": "MIT",
+  "repository": "samjbmason/use-checkout",
+  "homepage": "https://github.com/samjbmason/use-checkout#readme",
+  "author": "Sam Mason de Caires <sam.jbmason@gmail.com>",
+  "keywords": [
+    "react",
+    "hooks",
+    "react-dom",
+    "use-checkout",
+    "ecommerce",
+    "checkout",
+    "stripe",
+    "stripe-checkout"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "coveralls": "jest --coverage && cat coverage/lcov.info | coveralls"
+  },
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hooks-testing-library": "^0.4.0",
+    "rollup": "^1.9.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-size-snapshot": "^0.8.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-terser": "^4.0.4"
+  }
+}
