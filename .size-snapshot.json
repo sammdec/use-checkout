@@ -1,13 +1,13 @@
 {
   "dist/use-checkout.cjs.js": {
-    "bundled": 1087,
-    "minified": 620,
-    "gzipped": 387
+    "bundled": 1637,
+    "minified": 1044,
+    "gzipped": 558
   },
   "dist/use-checkout.esm.js": {
-    "bundled": 1069,
-    "minified": 607,
-    "gzipped": 380,
+    "bundled": 1619,
+    "minified": 1027,
+    "gzipped": 544,
     "treeshaked": {
       "rollup": {
         "code": 14,
