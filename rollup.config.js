@@ -7,7 +7,10 @@ import pkg from "./package.json"
 export default [
   {
     input: "src/use-checkout.js",
-    external: ["react"],
+    external: ["stripe"],
+    globals: {
+      stripe: "Stripe"
+    },
     plugins: [
       babel({
         exclude: ["node_modules/**"]
