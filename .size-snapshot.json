@@ -1,8 +1,8 @@
 {
   "dist/use-checkout.cjs.js": {
-    "bundled": 1637,
-    "minified": 1044,
-    "gzipped": 558
+    "bundled": 1561,
+    "minified": 990,
+    "gzipped": 519
   },
   "dist/use-checkout.esm.js": {
     "bundled": 1619,

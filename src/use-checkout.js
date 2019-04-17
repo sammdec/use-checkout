@@ -1,11 +1,8 @@
 import { useEffect } from "react"
-const BETA_VERSION = "checkout_beta_4"
 
 const sendToCheckout = publicKey => options => {
   const Stripe = window.Stripe
-  const stripe = Stripe(publicKey, {
-    betas: [BETA_VERSION]
-  })
+  const stripe = Stripe(publicKey)
 
   stripe.redirectToCheckout({ ...options })
 }
