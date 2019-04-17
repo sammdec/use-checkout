@@ -5,9 +5,9 @@
     "gzipped": 519
   },
   "dist/use-checkout.esm.js": {
-    "bundled": 1619,
-    "minified": 1027,
-    "gzipped": 544,
+    "bundled": 1543,
+    "minified": 973,
+    "gzipped": 507,
     "treeshaked": {
       "rollup": {
         "code": 14,
