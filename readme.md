@@ -6,7 +6,7 @@
 
 A tiny React hook that makes it easy to setup Stripe's new [Checkout](https://stripe.com/docs/payments/checkout) in your React app. If you use this hook multiple times it will only ever create one Stripe instance
 
-If your building an ecommerce site this hook pairs very nicely with the [`use-cart`](https://github.com/samjbmason/use-cart)
+If you're building an ecommerce site this hook pairs very nicely with the [`use-cart`](https://github.com/samjbmason/use-cart)
 
 ## Installation
 
@@ -31,7 +31,7 @@ import useCheckout from "use-checkout"
 
 // Items for checkout
 const items = [{ sku: "SKU_1", quantity: 1 }, { sku: "SKU_2", quantity: 3 }]
-const succesUrl = "https://my-website.com/success-url"
+const successUrl = "https://my-website.com/success-url"
 const cancelUrl = "https://my-website.com/cancel-url"
 
 const App = () => (
